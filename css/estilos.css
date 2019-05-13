@@ -1,3 +1,4 @@
+
 .deserto {
     width: 500px;
     height: 150px;
@@ -14,10 +15,12 @@
 }
 
 .dino {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 43px;
+    right: 452px;
+    bottom: 4px;
     background-image: url(sprites.png);
-    background-position-y: -3px;
+    background-position-y: -5px;
     position: absolute;
     z-index: 2;
 }
@@ -28,5 +31,72 @@
     background-image: url(sprites.png);
     background-position: -86px 2px;
     position: absolute;
-    z-index: 1;
+    z-index: -1;
+}
+
+.cactus {
+    background-image: url(sprites.png);
+    background-position-y: -2px;
+    position: absolute;
+    z-index: 3;
+}
+
+.cactus.pequeno{
+    width: 15px;
+    height: 38px;
+}
+
+.cactus.grande{
+    width: 23px;
+    height: 48px;
+}
+
+.pterodactilo {
+    background-image: url(sprites.png);
+    position: absolute;
+    width: 42px;
+    height: 26px;
+    z-index: 3;
+}
+.pontuacao {
+    right: 10px;
+    top: 0px;
+    width: 50px;
+    height: 11px;
+    position: absolute;
+    display: inline-flex;
+    z-index: 12;
+}
+
+.digito {
+    width: 9px;
+    height: 11px;
+    background-image: url(sprites.png);
+    position: relative;
+}
+
+.endgame {
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    right: 1160px;
+}
+.over {
+    background-image: url(sprites.png);
+    background-position:-485px -15px;
+    position: absolute;
+    width: 190px;
+    height: 10px;
+    right: -105px;
+    top: -15px;
+}
+
+.restart {
+    background-image: url(sprites.png);
+    position: absolute;
+    height: 30px;
+    width: 34px;
+    top: 10px;
+    right: -25px;
+    background-position: -4px -3px;
 }
